@@ -49,7 +49,7 @@ You may find the file in the repository above.
 
 ## Methods
 
-//Firebase API
+//Firebase API - https://github.com/HackerNews/API
 	
 	/**
 	 * Get Item
@@ -125,7 +125,7 @@ You may find the file in the repository above.
     
    	get_updates();
    	    
-//Algolia API
+//Algolia API - https://hn.algolia.com/api
     
     /**
 	 * Get search item
@@ -173,5 +173,5 @@ You may find the file in the repository above.
     
     get_search_by_date();
     
-	//Uses Func Get Args. Each argument is a search string
+    //Uses Func Get Args. Each argument is a search string
     
