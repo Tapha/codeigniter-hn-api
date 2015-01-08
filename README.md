@@ -49,7 +49,7 @@ You may find the file in the repository above.
 
 ## Methods
 
-//Firebase API - https://github.com/HackerNews/API
+####Firebase API - https://github.com/HackerNews/API
 	
 	/**
 	 * Get Item
@@ -125,7 +125,7 @@ You may find the file in the repository above.
     
    	get_updates();
    	    
-//Algolia API - https://hn.algolia.com/api
+####Algolia API - https://hn.algolia.com/api
     
     /**
 	 * Get search item
