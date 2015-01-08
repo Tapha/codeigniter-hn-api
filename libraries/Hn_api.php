@@ -75,14 +75,14 @@ class Hn_api {
 	 *
 	 * The item's unique id. Required.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/	 	 
 
     public function get_item($item_id = NULL)
     {
     	$client = new Client();
-    	$url_string = $this->base_api."/item/".$item_id.$this->after_item;
+    	$url_string = $this->base_api."item/".$item_id.$this->after_item;
     	$response = $client->get($url_string);
     	$response = $response->json();
     	return $response;
@@ -113,7 +113,7 @@ class Hn_api {
 	 *
 	 * Get the users details.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -133,7 +133,7 @@ class Hn_api {
 	 *
 	 * Check the top stories on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -153,7 +153,7 @@ class Hn_api {
 	 *
 	 * Check the current max id on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -173,7 +173,7 @@ class Hn_api {
 	 *
 	 * Check the most recent updates on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -193,7 +193,7 @@ class Hn_api {
 	 *
 	 * Check the item details on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -211,7 +211,7 @@ class Hn_api {
 	 *
 	 * Check the user details on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -229,7 +229,7 @@ class Hn_api {
 	 *
 	 * Search on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
@@ -264,7 +264,7 @@ class Hn_api {
 	 *
 	 * Search on hn.
 	 *
-	 * @return JSON
+	 * @return JSON -> Array
 	 * @author Tapha
 	 **/
     
