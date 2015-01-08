@@ -260,9 +260,9 @@ class Hn_api {
     }
     
     /**
-	 * Get search 
+	 * Get search, ordered by date.
 	 *
-	 * Search on hn.
+	 * Search on hn, ordered by date.
 	 *
 	 * @return JSON -> Array
 	 * @author Tapha
