@@ -47,6 +47,12 @@ libraries/Hn_api.php -> your_app/application/libraries/add here
 ``` 
 You may find the file in the repository above.
 
+###Step 3: Either autoload the library in your config/autoload.php file or load the library manually, as needed.
+
+```
+$this->load->library('Hn_api');
+```
+
 ## Methods
 
 ####Firebase API - https://github.com/HackerNews/API
