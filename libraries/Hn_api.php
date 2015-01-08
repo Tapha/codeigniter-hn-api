@@ -9,8 +9,8 @@
  * @subpackage    	Libraries
  * @category    	Libraries
  * @author        	Tapha Ngum
- * @license         http://opensource.org/licenses/MIT
- * @link			https://github.com/Tapha/codeigniter-hn-api
+ * @license         	http://opensource.org/licenses/MIT
+ * @link		https://github.com/Tapha/codeigniter-hn-api
  */
 
 // Load Guzzle
