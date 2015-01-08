@@ -197,7 +197,7 @@ class Hn_api {
 	 * @author Tapha
 	 **/
     
-    public function get_search_item($id)
+    public function get_search_item($id = NULL)
     {
     	$client = new Client();
     	$url_string = $this->base_search_api."items/:".$id;
@@ -215,7 +215,7 @@ class Hn_api {
 	 * @author Tapha
 	 **/
     
-    public function get_search_user($username)
+    public function get_search_user($username = NULL)
     {
     	$client = new Client();
     	$url_string = $this->base_search_api."users/:".$username;
