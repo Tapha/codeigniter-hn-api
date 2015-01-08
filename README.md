@@ -1,5 +1,4 @@
-# Codeigniter-HN-API
-"A Codeigniter wrapper for the Hacker News API - (Algolia &amp; Firebase versions supported)"
+# Codeigniter Library For Hacker News API
 
 ## Overview
 
@@ -26,7 +25,7 @@ The recommended way to install Guzzle is through
 [Composer](http://getcomposer.org).
 
 ```bash
-# Install Composer (within your application root directory)
+# Install Composer
 curl -sS https://getcomposer.org/installer | php
 ```
 
@@ -49,3 +48,130 @@ libraries/Hn_api.php -> your_app/application/libraries/add here
 You may find the file in the repository above.
 
 ## Methods
+
+//Firebase API
+	
+	/**
+	 * Get Item
+	 *
+	 * The item's unique id. Required.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+	 	 	 
+	get_item($item_id = NULL);
+    
+    /**
+	 * Item Deleted
+	 *
+	 * Check if item is deleted.
+	 *
+	 * @return BOOL
+	 * @author Tapha
+	 **/
+	 	 	 
+    item_deleted($item_id = NULL);
+    
+    //Users
+    
+    /**
+	 * Get User
+	 *
+	 * Get the users details.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_user($username = NULL);
+    
+    //Top Stories
+    
+    /**
+	 * Get top stories
+	 *
+	 * Check the top stories on hn.
+	 *
+	 * @return JSON
+	 * @author Tapha
+	 **/
+    
+    get_top_stories();
+    
+    //Max ID
+    
+    /**
+	 * Get current Maximum ID
+	 *
+	 * Check the current max id on hn.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_max_id();
+    
+    //Updates
+    
+    /**
+	 * Get all current updates
+	 *
+	 * Check the most recent updates on hn.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+   	get_updates();
+   	    
+//Algolia API
+    
+    /**
+	 * Get search item
+	 *
+	 * Check the item details on hn.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_search_item($id = NULL);
+    
+    /**
+	 * Get search user
+	 *
+	 * Check the user details on hn.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_search_user($username = NULL);
+    
+    /**
+	 * Get search 
+	 *
+	 * Search on hn.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_search(); 
+    
+    //Uses Func Get Args. Each argument is a search string
+    
+    /**
+	 * Get search, ordered by date
+	 *
+	 * Search on hn, ordered by date.
+	 *
+	 * @return JSON -> Array
+	 * @author Tapha
+	 **/
+    
+    get_search_by_date();
+    
+	//Uses Func Get Args. Each argument is a search string
+    
