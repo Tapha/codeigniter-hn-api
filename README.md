@@ -1,8 +1,6 @@
 # Codeigniter-HN-API
 "A Codeigniter wrapper for the Hacker News API - (Algolia &amp; Firebase versions supported)"
 
-# Codeigniter Library For Hacker News API
-
 ## Overview
 
 This is a very simple wrapper for the Algolia (https://hn.algolia.com/api) and Firebase (https://github.com/HackerNews/API) Hacker News API's.
@@ -28,7 +26,7 @@ The recommended way to install Guzzle is through
 [Composer](http://getcomposer.org).
 
 ```bash
-# Install Composer
+# Install Composer (within your application root directory)
 curl -sS https://getcomposer.org/installer | php
 ```
 
